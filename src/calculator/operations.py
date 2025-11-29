@@ -1,21 +1,16 @@
 def decorador(func):
     """
-
     Args:
       func: 
 
     Returns:float:
-
     """
     def inner(a, b):
         """
-
         Args:
           a:
           b:
-
         Returns:float:
-
         """
         if b == 0:
             raise ValueError("No es posible dividir por 0")
@@ -32,8 +27,20 @@ def dividir(a:float, b:float) -> float:
 
     Returns:float:
 
-    """
+    """    
     return a / b
+
+
+def restar(a: float, b: float ) -> float:
+    """
+    Args:
+      a:float:
+      b:float:
+
+    Returns:float:
+
+    """
+    return a - b
 
 if __name__ == "__main__":
    print(
