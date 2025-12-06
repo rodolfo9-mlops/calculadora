@@ -1,5 +1,5 @@
 [project]
-name = "calculadora"
+name = "calculator"
 version = "1.0.0"
 description = "Este proyecto contiene el código de la calculora"
 authors = [
@@ -19,5 +19,5 @@ build-backend = "poetry.core.masonry.api"
 [dependency-groups]
 dev = [
     "pytest (>=9.0.1,<10.0.0)",
-    "pylint (>=4.0.4,<5.0.0)"
+    "flake8 (>=7.3.0,<8.0.0)",
 ]
