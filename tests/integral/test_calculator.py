@@ -12,7 +12,7 @@ import re
         (["3", "3", "7"], 21),
         (["4", "20", "5"], 4),
         (["5", "2", "2"], 4),
-        (["5", "4"], 2)
+        (["6", "4"], 2)
     ]
 )
 def test_calculadora(monkeypatch,capsys, inputs, expected):
