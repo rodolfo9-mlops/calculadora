@@ -1,4 +1,4 @@
-from calculator.operations import sumar, restar, multiplicar, dividir
+from calculator.operations import sumar, restar, multiplicar, dividir,potencia
 
 def calculadora():
     """ """
@@ -6,6 +6,7 @@ def calculadora():
     print("2 Resta")
     print("3 Multiplicacion")
     print("4 Division")
+    print("5 Potencia")
     
     opcion=input("Elige la operacion ")
     
@@ -20,6 +21,8 @@ def calculadora():
         print("Resultado: ",multiplicar(num1,num2))
     elif opcion == "4":
         print("Resultado: ",dividir(num1,num2))
+    elif opcion == "5":
+        print("Resultado: ",potencia(num1,num2))
 
 if __name__ == "__main__":
     calculadora()
