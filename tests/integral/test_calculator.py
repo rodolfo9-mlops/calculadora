@@ -11,6 +11,8 @@ import re
         (["2", "10", "4"], 6),
         (["3", "3", "7"], 21),
         (["4", "20", "5"], 4),
+        (["5", "2", "2"], 4),
+        (["6", "4"], 2)
     ]
 )
 def test_calculadora(monkeypatch,capsys, inputs, expected):
