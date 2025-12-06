@@ -46,4 +46,4 @@ jobs:
 
       - name: Run flake8 (do NOT fail PR)
         run: |
-          flake8 . || true
+          flake8 calculator || true
