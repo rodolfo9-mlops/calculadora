@@ -1,3 +1,5 @@
+import math
+
 def multiplicar(a: float, b: float ) -> float:
     """
     Args:
@@ -52,6 +54,29 @@ def dividir(a:float, b:float) -> float:
     """    
     return a / b
 
+def raiz_cuad(a:float)->float:
+    """
+    Args:
+      a:float:
+
+    Returns:float:
+
+    """    
+
+    if a is None:
+        raise TypeError("El input no puede ser nulo")
+
+    if not isinstance(x, (int, float)):
+        raise TypeError("El input debe ser entero o flotante")
+
+    if math.isnan(x):
+        raise ValueError("El input no puede ser NaN")
+
+    if x < 0:
+        raise ValueError("No es posible calcular la raiz cuadrada de un negativo")
+
+    # Case 5: All good
+    return math.sqrt(x)
 
 def restar(a: float, b: float ) -> float:
     """

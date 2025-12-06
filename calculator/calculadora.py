@@ -1,4 +1,4 @@
-from calculator.operations import sumar, restar, multiplicar, dividir
+from calculator.operations import sumar, restar, multiplicar, dividir,raiz_cuad
 
 def calculadora():
     """ """
@@ -6,11 +6,14 @@ def calculadora():
     print("2 Resta")
     print("3 Multiplicacion")
     print("4 Division")
+
+    print("6 Raiz Cuadrada")
     
     opcion=input("Elige la operacion ")
     
     num1 = float(input("Ingresa el primer numero: "))
-    num2 = float(input("Ingresa el segundo numero: "))
+    if opcion !="6":
+        num2 = float(input("Ingresa el segundo numero: "))
     
     if opcion == "1":
         print("Resultado: ",sumar(num1,num2))
@@ -20,6 +23,9 @@ def calculadora():
         print("Resultado: ",multiplicar(num1,num2))
     elif opcion == "4":
         print("Resultado: ",dividir(num1,num2))
+    elif opcion == "6":
+        print("Resultado: ",raiz_cuad(num1))
+
 
 if __name__ == "__main__":
     calculadora()
